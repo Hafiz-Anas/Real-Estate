@@ -1,0 +1,603 @@
+/*Style*/
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'gothic', sans-serif;
+}
+.color {
+    color: rgb(255, 166, 0) !important;
+}
+img {
+    width: 100%;
+}
+/*HEADER*/
+header {
+    width: 100%;
+    background-image:linear-gradient(rgba(61, 64, 68, 0.849), rgba(46, 48, 42, 0.801)), url(Imgs/background.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+.navigation {
+    height: 10vh;
+    border-bottom: 1px solid rgb(182, 169, 169);
+}
+.navbar {
+    width: 85%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    font-size: 27px;
+    font-weight: bold;
+    color: #fff;
+}
+.nav-links {
+    display: flex;
+}
+.nav-links li  {
+    list-style: none;
+    padding: 0px 13px;
+}
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    opacity: .6;
+    transition: .3s ease-in-out;
+}
+.active {
+    opacity: 1 !important;
+}
+.nav-links a:hover {
+    opacity: 1;
+}
+.burger {
+    display: none;
+    cursor: pointer;
+}
+.burger div {
+    width: 22px ;
+    height: 2px;
+    margin: 5px;
+    background-color: #fff;
+    transition: all .3s ease-in
+}
+.header-content {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+.header-content h1 {
+    font-size: 50px;
+}
+.header-content p {
+    font-size: 18px;
+    color: rgb(206, 204, 204);
+}
+/*HOW IT WORS*/
+#how-it-works .container { 
+    width: 100%;
+    background-color: rgb(245, 245, 245);
+    margin: auto;
+    text-align: center;
+    padding: 50px 0px;
+}
+#how-it-works  .container .heading {
+    font-size: 35px;
+}
+#how-it-works .boxes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.box .fa {
+    font-size: 40px;
+    padding: 10px 0px;
+    padding-top: 50px;
+}
+.box h1 {
+    font-size: 20px;
+    padding: 10px 0px;
+    color: rgb(85, 85, 85);
+    font-weight: 100;
+}
+.box p {
+    color: rgb(116, 115, 115)
+}
+/*AGENTS*/
+#agents { 
+    padding: 60px 0;
+    background-color: rgb(255, 255, 255);
+}
+#agents .heading h1{
+    font-size: 45px;
+    padding-left: 15px;
+}
+#agents .heading p{
+    font-size: 20px;
+    padding: 30px 15px;
+    color: rgb(99, 99, 99);
+}
+#agents .persons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 3rem;
+}
+#agents .person {
+    background-color: rgb(230, 230, 230);
+}
+.person h1 ,p{
+    padding: 5px 10px;
+    color: rgb(48, 48, 48);
+}
+/*CAMPANY*/
+#company .container {
+   padding: 30px 20px;
+   display:grid;
+   grid-template-columns: repeat(2, 1fr);
+   grid-gap: 2rem;
+}
+#company .state-icon img {
+    width: 95%;
+    height: 95%;
+    text-align: center;
+}
+#company .details {
+    padding-left: 30px;
+}
+#company .details h1 {
+    font-size: 35px;
+}
+#company .details p {
+    font-size: 18px;
+    padding: 20px 0px;
+    color: rgb(116, 115, 115);
+}
+#company .details ul {
+    padding: 20px 0px;
+}
+.details ul li {
+    color: rgb(71, 71, 71);
+    padding: 7px 0px;
+    list-style-position: inside;
+}
+.details button {
+    background-color: rgb(255, 166, 0);
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 10px 25px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    margin-top: 50px;
+}
+
+/*SERVICES*/
+#services {
+    background-color: rgb(247, 247, 247);
+    padding: 50px 0px;
+}
+#services .heading h1 {
+    font-size: 45px;
+    text-align: center;
+
+}
+#services .boxes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 3rem;
+    padding-top: 30px;
+}
+#services .box {
+    display: flex;
+    padding: 0px 10px
+}
+#services .box .icon {
+    padding: 0px 20px;
+}
+#services .box .details {
+    padding: 5px 5px;
+}
+#services .box .details h1 {
+    padding-left: 10px;
+}
+#services a {
+    color: rgb(255, 166, 0);
+    text-decoration: none;
+    padding-left: 10px;
+}
+#services a:hover {
+    text-decoration: underline;
+}
+/*CLIENTS*/
+#clients {
+    padding: 30px 0px;
+}
+#clients .heading h1 {
+    font-size: 40px;
+    text-align: center;
+    padding: 20px 0px;
+}
+#clients .container {
+    width: 90%;
+    margin: 10px auto;
+}
+.slides {
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+}
+.slider {
+    height: 100%;
+    display: flex;
+    width: 300%;
+    transition: all .8s;
+}
+.slider .slide {
+    padding-right: 50px;
+    flex-basis: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.slider .slide .profile {
+    display: flex;
+    margin-top: 20px;
+}
+.profile .icon img {
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+}
+.profile .name { 
+    padding: 18px 20px;
+    color: rgb(153, 153, 153);
+}
+.massage {
+    font-style: italic;
+    font-size: 20px;
+    text-align: center;
+}
+.massage p {
+    color: rgb(109, 109, 109);
+    line-height: 33px;
+}
+.controls .arrow {
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+    font-size: 45px;
+}
+.arrow.left {
+    left: 10px;
+}
+.arrow.right {
+    right: 10px;
+}
+/*CONTACT*/
+#contact {
+    background-color: rgb(245, 244, 244);
+    padding: 50px 20px;
+}
+#contact .heading h1 {
+    text-align: center;
+    font-size: 40px;
+    padding-bottom: 30px;
+}
+#contact .container {
+    display: flex;
+    justify-content: space-between;
+}
+form h1 {
+    font-weight: 100;
+    padding: 20px 0px;
+}
+#contact .reg-form {
+    width: 55%;
+    background-color: white;
+    padding: 40px 40px;
+}
+form .labels {
+    margin: 15px 0px;
+}
+form .input {
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 17px;
+    outline: none;
+    border-radius: 50px;
+    border: none;
+    margin: 5px 0px;
+    border: 1px solid rgb(209, 209, 209);
+}
+form .textarea {
+    border-radius: 20px;
+}
+form button {
+    background-color: rgb(255, 166, 0);
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 10px 25px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    font-size: 17px;
+}
+#contact .address {
+    width: 40%;
+}   
+.address .content {
+    background-color: white;
+    padding: 20px 20px;
+}
+.address .content h1 {
+    font-size: 18px;
+    color: rgb(75, 75, 75);
+    font-weight: 500;
+}
+.address .content p {
+    font-size: 16px;
+    margin-bottom: 30px;
+    color: rgb(99, 98, 98);
+}
+.address .content .link:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+/*FOOTER*/
+#footer .container {
+    background-color: rgb(0, 47, 53);
+    padding: 90px 10px;
+    display: grid;
+    grid-template-columns: 2fr 1fr 3fr;
+    color: white;
+}
+#footer .about {
+    padding: 0px 80px 0px 20px;
+}
+#footer .about h1 {
+    font-weight: 500;
+    color: rgb(253, 247, 249);
+}
+#footer .about p {
+    color: rgb(156, 156, 156);
+    line-height: 25px;
+    font-size: 17px;
+    padding: 15px 0px; 
+}
+#footer .links h1{
+    color: lavenderblush;
+    font-size: 17px;
+    font-weight: 500;
+} 
+.links ul {
+    padding-top: 20px;
+}
+.links ul li{
+    list-style: none;
+    padding: 5px 0px;
+}
+.links ul li a {
+    text-decoration: none; 
+    color: white;
+    opacity: .5;
+    transition: ease-in-out .6s;
+}
+.links ul li a:hover {
+    opacity: 1;
+}
+.newsletter {
+    margin-left: 50px;
+}
+.newsletter h1 {
+   font-weight: 500;
+   font-size: 18px;
+}
+.newsletter .subscribe {
+    width: 70%;
+    font-size: 15px;
+    padding: 9px 13px;
+    margin: 25px 0px;
+    background-color: rgb(0, 47, 53);
+    border: 1px solid rgb(153, 153, 153);
+    outline: none;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    color: rgb(245, 245, 245);
+}
+.newsletter button {
+    background-color: rgb(255, 166, 0);
+    padding: 10px 25px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    transition: .5s ease-in-out; 
+}
+.newsletter button a {
+    color: black;
+    text-decoration: none;
+}
+.newsletter button:hover {
+    background-color: rgb(207, 207, 207);
+}
+.newsletter ul {
+    display: flex;
+}
+.newsletter ul li {
+    list-style: none;
+    padding: 10px 15px
+}
+.newsletter ul li a {
+    text-align: none;
+    color: white;
+    opacity: .5;
+    transition: ease-in-out .6s;
+}
+.newsletter ul li a:hover {
+    opacity: 1;
+}
+.copyright {
+    background-color: rgb(0, 47, 53);
+    border-top: 1px solid rgb(153, 153, 153);
+    color: rgb(161, 161, 161);
+    text-align: center;
+    padding: 10px 0px;
+    font-size: 15px;
+}
+/***RESPONSIVE REQIUREMENTS***/
+/*HOME*/
+@media screen and (max-width: 800px) {
+    body {overflow-x: hidden;}
+    .nav-links {
+        position: absolute;
+        top: 10vh;
+        right: 0;
+        width: 50%;
+        height: 70%;
+        background-color: rgba(47, 51, 59, 0.97);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        transform: translateX(100%);
+        transition: transform ease-in;
+    }
+    .nav-links li {opacity: 0;}
+    .burger {display: block;}
+}
+.nav-active {
+    transform: translateX(0%);
+}
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+.toggle .line-1 {
+    transform: rotate(-45deg) translate(-5px, 5px);
+}
+.toggle .line-2 {opacity: 0;}
+.toggle .line-3 {
+    transform: rotate(45deg) translate(-5px, -5px);
+}
+@media screen and (max-width: 800px) {
+    .header-content h1 {
+        font-size: 30px;
+    }
+    .header-content p {
+        font-size: 13px;
+    }
+}
+/*HOW IT WORKS*/ 
+@media screen and (max-width: 600px) {
+   #how-it-works .boxes{
+       width: 70%;
+       margin: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+/*AGENTS*/
+@media screen and (max-width: 550px) {
+    #agents .heading h1{
+        font-size: 30px;
+    }
+    #agents .heading p {
+        font-size: 15px;
+        padding: 15px;
+    }
+    #agents .persons {
+        width: 90%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+/*COMPANY*/
+@media screen and (max-width: 800px) {
+    #company .container {
+        grid-template-columns: 1fr;
+    }
+    #company .state-icon img {
+        display: none;
+    }
+}
+/*services*/
+@media screen and (max-width:800px) {
+    #services .heading h1 {
+        font-size: 35px;
+    }
+    #services .boxes {
+     grid-template-columns: 1fr;
+     width: 90%;
+     margin: auto;       
+    }
+}
+/*CLIENTS*/
+@media screen and (max-width: 700px) {
+    #clients {
+        padding: 20px 0px;
+    }
+    #clients .heading h1 {
+        font-size: 25px;
+        padding: 10px 0px
+    }
+    #clients .slides {
+        height: 200px;
+    }
+    #clients .massage p {
+        font-size: 15px;
+        line-height: 20px;
+        padding: 0px 40px
+    }
+    .name  {
+        font-size: 13px;
+    }
+}
+/*CONTACT*/ 
+@media screen and (max-width: 700px) {
+    #contact .container {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .reg-form {
+        width: 100% !important;
+    }
+    .address {
+        width: 100% !important;
+        margin-top: 30px;
+    }
+}
+/*FOOTER*/
+@media screen and (max-width: 1000px) {
+    #footer .container {
+        grid-template-columns: 1fr;
+    }
+    #footer .about {
+        width: 75%;
+        margin: auto;
+        padding: 0;
+    }
+    #footer .links, .newsletter {
+        width: 75%;
+        margin: 20px auto;  
+    }
+}
